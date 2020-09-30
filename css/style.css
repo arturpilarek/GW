@@ -9,7 +9,7 @@ html {
 body {
     margin: 0;
     height: 100vh;
-    background-image: linear-gradient(orange 47%,#4A4949 80%);
+    background-image: linear-gradient(orange 47%,#4A4949 75%);
 }
 
 /* dark:#171717    light #FFFFFF */
@@ -44,6 +44,7 @@ body {
 
 
 /*Product cards */
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -70,7 +71,7 @@ body {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .card button:hover {
@@ -79,7 +80,7 @@ body {
 
 .card img {
   width: 100%;
-  height: 100%;
+
 }
 
 .product__section {
