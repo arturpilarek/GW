@@ -9,7 +9,6 @@ html {
 body {
     margin: 0;
     height: 100vh;
-    background-image: linear-gradient(orange 47%,#4A4949 75%);
 }
 
 /* dark:#171717    light #FFFFFF */
@@ -21,6 +20,10 @@ body {
   background-size: cover;
   width: 100%;
   position: relative;
+}
+
+.gradient {
+  background-image: linear-gradient(orange 30%, #707070, white);
 }
 
 .logo {
