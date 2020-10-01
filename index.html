@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Grey Wolf</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hamburger.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/af4e7a822b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="hero-bg">
@@ -21,14 +22,26 @@
       </button>
       <div class="navigation navigation--active">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="">Lorem</a></li>
-          <li class="navigation__item"><a href="">Ipsum</a></li>
-          <li class="navigation__item"><a href="">Dolor</a></li>
-          <li class="navigation__item"><a href="">Sit</a></li>
+          <li class="navigation__item"><a href="#">Mand</a></li>
+          <li class="navigation__item"><a href="#">Kvinde</a></li>
+          <li class="navigation__item"><a href="#">Nyheder</a></li>
+          <li class="navigation__item"><a href="#">Tilbud</a></li>
         </ul>
       </div>
+      <img src="Grey wolf 1.png" alt="Grey Wolf logo" class="logo">
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
     </div>
-    
+    <!--slide show-->
+    <div class="slider">
+      <div id="box">
+        <img src="slideshow1.jpg" alt="First Slide" class="slide__img" />
+      </div>
+      <!--control buttons to the slideshow-->
+      <button class="prev button" onclick="prevImage()"><i class="fas fa-caret-left"></i></button>
+      <button class="next button" onclick="nextImage()"><i class="fas fa-caret-right"></i></button>
+      <button class="shopNow__button"><a href="#">Køb nu</a></button>
+    </div>
+
     <div class="main__section">
       <img src="sportClothes1.jpg" alt="Sport Clothes" class="main__image" />
       <div class="main__content">
@@ -76,7 +89,6 @@
             adipisicing elit. Nam repellat molestias quia aliquam culpa sint?
             Doloribus deleniti unde similique nesciunt?
           </p>
-          
         </div>
       </div>
       <div class="footer__container--second">

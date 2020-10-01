@@ -19,6 +19,26 @@ body {
   padding-bottom: 8em;
   background-position: 50% 100%;
   background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  height: 90.5px;
+  width: 81px;
+  display: inline-block;
+  margin-left: -30px;
+  left: 50%;
+  
+  top: 20%;
+}
+
+.fa-shopping-cart {
+  font-size: 30px;
+  position: absolute;
+  left: 91%;
+  top: 60%;
 }
 
 .main__section {
@@ -42,6 +62,56 @@ body {
   text-align: center;
 }
 
+/* Slideshow */
+
+.slider img {
+  width: 100%;
+  height: 480px;
+}
+
+.slider {
+  width: 100vw;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid white;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  margin-bottom: 50px;
+}
+
+
+/* inspire with this when making shop now button, remember about absolute position in relative container */
+.button {
+  padding: 10px;
+  border: none;
+  background: none;
+  font-size: 90px;
+  color:orange;
+  position: absolute;
+  top:35%;
+  cursor: pointer;
+}
+
+/* button appereance */
+.next {
+  
+  margin-left: 87vw;
+}
+
+.shopNow__button {
+  padding: 10px;
+  border: none;
+  background: orange;
+  font-size: 30px;
+  position: absolute;
+  top: 87%;
+  right: 38%;
+  border-radius: 32px;
+}
+
+.shopNow__button a {
+  color: white;
+}
 
 /*Product cards */
 
