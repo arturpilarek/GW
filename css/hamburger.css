@@ -69,14 +69,13 @@
 }
 
 .navigation {
-    height: 210px;
-    width: 200px;
+    height: 180px;
+    width: 160px;
     background-color:#4A4949;
     position: absolute;
     left: 0;
     top: 128px;
-    transform: translateX(-200px);
-    border-right: 3px solid orange;
+    transform: translateX(-160px);
     border: 3px solid orange;
     z-index: 999;
 }
@@ -91,11 +90,11 @@
     margin-top: 20px;
     list-style: none;
     margin: 20px 10px;
+    position: relative;
 }
 
 .navigation__item {
     margin-bottom: 20px;
-    border: 3px solid orange;
 }
 
     a {

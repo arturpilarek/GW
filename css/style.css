@@ -79,8 +79,6 @@ body {
   margin-bottom: 50px;
 }
 
-
-/* inspire with this when making shop now button, remember about absolute position in relative container */
 .button {
   padding: 10px;
   border: none;
@@ -94,7 +92,6 @@ body {
 
 /* button appereance */
 .next {
-  
   margin-left: 87vw;
 }
 
@@ -184,15 +181,16 @@ body {
   color: white;
 }
 
+
 .footer {
-  height: 200px;
+  height: 250px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #3f5f6a;
   margin-bottom: 0;
   color: white;
-  margin-top: 50px;
+  margin-top: 50px; 
 }
 
 .footer__container--first {
@@ -204,7 +202,7 @@ body {
 .footer__container--second{
   flex: 50%;
   text-align: center;
-}
+} 
 
 .footer__floatContainer {
   display: flex;
@@ -217,3 +215,7 @@ body {
   border-radius: 16px;
 }
 
+.billeder__container {
+  display: flex;
+  height: 400px;
+}

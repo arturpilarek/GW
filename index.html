@@ -6,11 +6,15 @@
     <title>Grey Wolf</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/style-C.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://kit.fontawesome.com/af4e7a822b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/af4e7a822b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="hero-bg">
@@ -28,7 +32,7 @@
           <li class="navigation__item"><a href="#">Tilbud</a></li>
         </ul>
       </div>
-      <img src="Grey wolf 1.png" alt="Grey Wolf logo" class="logo">
+      <img src="Grey wolf 1.png" alt="Grey Wolf logo" class="logo" />
       <a href="#"><i class="fas fa-shopping-cart"></i></a>
     </div>
     <!--slide show-->
@@ -37,10 +41,15 @@
         <img src="slideshow1.jpg" alt="First Slide" class="slide__img" />
       </div>
       <!--control buttons to the slideshow-->
-      <button class="prev button" onclick="prevImage()"><i class="fas fa-caret-left"></i></button>
-      <button class="next button" onclick="nextImage()"><i class="fas fa-caret-right"></i></button>
+      <button class="prev button" onclick="prevImage()">
+        <i class="fas fa-caret-left"></i>
+      </button>
+      <button class="next button" onclick="nextImage()">
+        <i class="fas fa-caret-right"></i>
+      </button>
       <button class="shopNow__button"><a href="#">Køb nu</a></button>
     </div>
+
 
     <div class="main__section">
       <img src="sportClothes1.jpg" alt="Sport Clothes" class="main__image" />
@@ -79,6 +88,47 @@
         <p><button>Add to Cart</button></p>
       </div>
     </section>
+   
+
+<!--Carina1-->
+      <div class="container">
+        <img src="slideshow2.jpg" alt="Notebook" style="width:100%;">
+        <div class="content">
+          <h1>Heading</h1>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+
+
+      <!-- Trigger the Modal -->
+      <div class="billeder__container">
+<img id="myImg" src="os.jpeg" alt="Snow" style="width:100%;max-width:300px">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+      <!-- Trigger the Modal -->
+      <img id="myImg" src="os.jpeg" alt="Snow" style="width:100%;max-width:300px">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+    </div>
+
+
+
+
     <footer class="footer">
       <div class="footer__container--first">
         <h3>Om os</h3>
