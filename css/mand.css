@@ -1,0 +1,91 @@
+/* skal fjernes, jeg bruger den kun for at tjekke hojde pa siden  */
+.height__test {
+    min-height: 100vh;
+  }
+
+.mand__header h1  {
+    margin: 10px;
+}
+  /* Product container -header+sort  */
+
+  .product-container {
+      margin: 10px;
+  }
+
+  .product-filter {
+    display: flex;
+    margin-top: 30px;
+    background-color: white;
+    align-items: center;
+  }
+
+  .product-filter h1 {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+
+  .sort {
+    display: flex;
+  }
+
+  .collection-sort {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Product container -products layout  */
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-image img {
+    max-width: 100%;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    background-color: white;
+    border: 0.5px solid grey;
+    display: flex; /* so child elements can use flexbox stuff too! */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-info {
+    margin-top: auto;
+  }
+
+  /* Select the first two , two enlarge first two products */
+.products .product-card:first-child, 
+.products .product-card:nth-child(2) {
+  flex: 2 46%;
+} 
+
+
+/media queries for mobile, skal tilpasses
+@media (max-width: 600px) {
+    .product-card {
+      flex: 1 46%;
+    }
+  }   
+  
+  
+  
+  @media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+  .sort {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+}

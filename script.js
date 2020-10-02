@@ -1,3 +1,5 @@
+//Hamburger starts here
+
 const hamburger = document.querySelector('.hamburger')
 const nav = document.querySelector('.navigation')
 const handleClick = () => {
@@ -7,7 +9,10 @@ const handleClick = () => {
 
 hamburger.addEventListener('click', handleClick);
 
+//-------
 
+
+//Slider starts here
 var slider_content = document.getElementById('box');
 
 // contain images in an array
@@ -45,6 +50,11 @@ function prevImage(){
 
 setInterval(nextImage , 4000);
 
+//------
+
+
+// Picture with description and popup starts here
+
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -63,3 +73,4 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+//------
