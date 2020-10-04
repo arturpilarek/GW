@@ -53,7 +53,7 @@
       <button class="shopNow__button"><a href="#">Køb nu</a></button>
     </div>
 
-
+<!--some random section, uncomment if nedded
     <div class="main__section">
       <img src="sportClothes1.jpg" alt="Sport Clothes" class="main__image" />
       <div class="main__content">
@@ -65,101 +65,17 @@
           laudantium numquam non quibusdam?
         </p>
       </div>
-    </div>
-    <section class="product__section">
-      <div class="card">
-        <img src="os.jpeg" alt="Denim Jeans" />
-        <h1>Tailored Jeans</h1>
-        <p class="card__paragraph">$19.99</p>
-        <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
-      </div>
+    </div> -->
 
-      <div class="card">
-        <img src="os.jpeg" alt="Denim Jeans" />
-        <h1>Tailored Jeans</h1>
-        <p class="card__paragraph">$19.99</p>
-        <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
-      </div>
-
-      <div class="card">
-        <img src="os.jpeg" alt="Denim Jeans" />
-        <h1>Tailored Jeans</h1>
-        <p class="card__paragraph">$19.99</p>
-        <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
-      </div>
-    </section>
    
 
-<!--Carina1-->
-      <div class="container">
-        <img src="slideshow2.jpg" alt="Notebook" style="width:100%;">
-        <div class="content">
-          <h1>Heading</h1>
-          <p>Lorem ipsum..</p>
-        </div>
-      </div>
 
-
-      <!-- Trigger the Modal -->
-      <div class="billeder__container">
-<img id="myImg" src="os.jpeg" alt="Snow" style="width:100%;max-width:300px">
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
-
-      <!-- Trigger the Modal -->
-      <img id="myImg1" src="os.jpeg" alt="Snow" style="width:100%;max-width:300px">
-      <!-- The Modal -->
-      <div id="myModal1" class="modal">
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption1"></div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#Nyheder">Nyheder</a>
-    <a href="#Dame">Dame</a>
-    <a href="#Mand">Mand</a>
-    <a href="#Tilbud">Tilbud</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  
-  <div style="padding-left:16px">
-  </div>
-  
-  <!--Hvorfor GW er økologisk tøj-->
-  <div class="container">
-  <img src="økotøj.jpg" alt="Økotøj" class="responsive">
-    <div class="text-block">
-      <h4>Grey wolf opfylder dine krav</h4>
-      <p>Du vil have det behageligt i dit træningstøj.</p>
-      <p>Sportstøj skal understrege, hvor lækker du er.</p>
-    </div>
-  </div>
-  
-  <!-- konkurrence -->
+        <!-- konkurrence -->
+        <div class="nyhedsbrev__container">
   <div class="flip-box">
     <div class="flip-box-inner">
       <div class="flip-box-front">
-        <img src="img_konkurrence.jpg" alt="konkurrence" class="responsive" >
+        <img src="slideshow1.jpg" alt="konkurrence" class="responsive" >
       </div>
       <div class="flip-box-back">
         <h2>Konkurrence</h2>
@@ -167,6 +83,74 @@
       </div>
     </div>
   </div>
+
+    <!-- nyhedsbrev -->
+    <form action="action_page.php">
+      <div class="container">
+        <h2>Nyhedsbrev</h2>
+        <p></p>
+      </div>
+    
+      <div class="container" style="background-color:white">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email address" name="mail" required>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Hver uge
+        </label>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe">Hver måned 
+        </label>
+      </div>
+    
+      <div class="container">
+        <input type="submit" value="tilmeld">
+      </div>
+    </form>
+  </div>
+
+
+  <!--slideshow 2-->
+
+  <div class="slider">
+    <div id="box2">
+      <img src="slideshow1.jpg" alt="First Slide" class="slide__img" />
+    </div>
+    <!--control buttons to the slideshow-->
+    <button class="prev button" onclick="prevImage()">
+      <i class="fas fa-caret-left"></i>
+    </button>
+    <button class="next button" onclick="nextImage()">
+      <i class="fas fa-caret-right"></i>
+    </button>
+  </div>
+
+  
+  <!--Hvorfor GW er økologisk tøj-->
+  <div class="container separator">
+  <img src="sportClothes1.jpg" alt="Økotøj" class="responsive">
+    <div class="text-block">
+      <h4>Grey wolf opfylder dine krav</h4>
+      <p>Du vil have det behageligt i dit træningstøj.</p>
+      <p>Sportstøj skal understrege, hvor lækker du er.</p>
+    </div>
+  </div>
+
+   
+  <!-- Dame og herre -->
+  <div class="container">
+    <img src="slideshow2.jpg" alt="dame">
+    <button class="btn">dame</button>
+  </div>
+  
+  <div class="container">
+    <img src="slideshow2.jpg" alt="herre">
+    <button class="btn">herre</button>
+  </div>
+
+
+  
+
+
   
   <!-- Nyheder -->
   <div class="row">
@@ -181,29 +165,15 @@
     </div>
   </div>
   
-  <!-- nyhedsbrev -->
-  <form action="action_page.php">
-    <div class="container">
-      <h2>Nyhedsbrev</h2>
-      <p></p>
-    </div>
-  
-    <div class="container" style="background-color:white">
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="text" placeholder="Email address" name="mail" required>
-      <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Hver uge
-      </label>
-      <label>
-        <input type="checkbox" checked="checked" name="subscribe">Hver måned 
-      </label>
-    </div>
-  
-    <div class="container">
-      <input type="submit" value="tilmeld">
-    </div>
-  </form>
-  
+
+  <!--Carina1-->
+<div class="container">
+  <img src="slideshow2.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum..</p>
+  </div>
+</div>
   
   <h2>Responsive Floats</h2>
   <p>The float-right-sm class will float right on screens that are equal to or LESS THAN 768px. The float-right-lg will float right on screens that are equal to or GREATER THAN 769px. Note that we also use a clearfix to clear floats.</p>
@@ -213,19 +183,7 @@
     <span class="float-right-sm">Float right =&lt;768px</span><br>
     <span class="float-right-lg">Float right =&gt;769px</span><br>
   </div>
-  
-  <!-- Dame og herre -->
-  <div class="container">
-    <img src="slideshow2.jpg" alt="dame">
-    <button class="btn">dame</button>
-  </div>
-  
-  <div class="container">
-    <img src="slideshow2.jpg" alt="herre">
-    <button class="btn">herre</button>
-  </div>
-
-
+ 
 
     <footer class="footer">
       <div class="footer__container--first">

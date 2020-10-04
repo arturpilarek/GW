@@ -3,11 +3,50 @@
     min-height: 100vh;
   }
 
-.mand__header h1  {
-    margin: 10px;
-    font-family: "Merriweather";
-    font-weight: 300;
-}
+
+  /*Product cards */
+
+.product__section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 0 15px;
+    text-align: center;
+    font-family: arial;
+    background-color: #FFAE4D;
+  }
+  
+  .card__paragraph {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #4A4949;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+
   /* Product container -header+sort  */
 
   .product-container {
