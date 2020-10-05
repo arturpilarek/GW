@@ -67,7 +67,7 @@ var i = image.length;
 
 // function for next slide 
 
-function nextImage(){
+function nextImage2(){
   if (i<image.length) {
       i= i+1;
   }else{
@@ -79,7 +79,7 @@ function nextImage(){
 
 // function for prev slide
 
-function prevImage(){
+function prevImage2(){
 
   if (i<image.length+1 && i>1) {
       i= i-1;
@@ -92,4 +92,4 @@ function prevImage(){
 
 // script for auto image slider
 
-setInterval(nextImage , 4000);
+setInterval(nextImage2 , 4000);
