@@ -108,11 +108,10 @@
   }
   
 
-  /*   flipping images!!
-  img:hover {
+  .flipping:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-  }   */
+  }   
   
   
   /* Style the form element with a border around it 
@@ -153,6 +152,11 @@
   }
   
   /* Container needed to position the button. Adjust the width as needed */
+
+.flex__container {
+  display: flex;
+}
+
   .container {
     position: relative;
     width: 50%;

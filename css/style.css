@@ -67,26 +67,6 @@ body {
 }
 
 
-/* uncomment if needed random section
-.main__section {
-  display: flex;
-  background: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 16px;
-}
-
-.main__image {
-  width: 15%;
-  height: 15%;
-  border-radius: 16px;
-}
-
-.main__content {
-  margin-left: 16px;
-  text-align: center;
-}   */
-
 /* Slideshow */
 
 .slider img {
@@ -117,7 +97,7 @@ body {
 
 /* button appereance */
 .next {
-  margin-left: 87vw;
+  margin-left: 81vw;
 }
 
 .shopNow__button {
@@ -127,7 +107,7 @@ body {
   font-size: 30px;
   position: absolute;
   top: 87%;
-  right: 38%;
+  right: 33%;
   border-radius: 32px;
 }
 
@@ -162,13 +142,14 @@ body {
 }
 
 .footer {
-  height: 40%;
+  height: 30%;
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: #3f5f6a;
   color: white;
   margin-top: 50px;
   position: absolute;
+  width: 100vw;
 }
 
 .footer__container--first {
@@ -199,4 +180,11 @@ body {
 .billeder__container {
   display: flex;
   height: 400px;
+}
+
+
+@media screen and (max-width: 450px) {
+  .footer {
+    width: 420px;
+  }
 }
