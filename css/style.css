@@ -45,7 +45,7 @@ body {
 .fa-shopping-cart {
   font-size: 30px;
   position: absolute;
-  left: 91%;
+  left: 89%;
   top: 60%;
 }
 
@@ -56,9 +56,13 @@ body {
   width: 100vw;
 }
 
-.NavbarAndEcobar__Merge {
-  display: flex;
-  flex-direction: column;
+.greywolf__title {
+  text-align: center;
+  position: sticky;
+  height: 40px;
+  top: 0;
+  background-color: white;
+  z-index: 998;
 }
 
 .nyhedsbrev__container {
@@ -81,7 +85,7 @@ body {
   position: relative;
   border: 10px solid white;
   box-shadow: 0px 0px 5px 2px #ccc;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .button {
@@ -115,12 +119,77 @@ body {
   color: white;
 }
 
+/* Gavekort */
 
+.giftCard__container {
+  width: 100%;
+  height: 200px;
+  background-image: url(../assets/os.jpeg);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.giftCard__container button {
+  background-color: orange;
+  color: white;
+  border-radius: 32px;
+  padding: 10px;
+  font-size: 30px;
+}
+.giftCard__container h2 {
+  margin-bottom: 0;
+}
+
+/* Nyhedsbrev */
+.newsletter__container > div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.newsletter__container {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+
+.newsletter__name,.newsletter__email, .newsletter__submit {
+  width: 60%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.newsletter__submit {
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+.newsletter__submit:hover {
+  opacity: 0.8;
+}
+
+/* eco sektionen */
+.eco__section {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
 
 /* Footer  */
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
   width: 50px;
   text-align: center;
   text-decoration: none;
@@ -147,7 +216,7 @@ body {
   grid-template-columns: 50% 50%;
   background-color: #3f5f6a;
   color: white;
-  margin-top: 50px;
+  margin-top: 50px; 
   position: absolute;
   width: 100vw;
 }

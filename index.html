@@ -36,6 +36,9 @@
       <img src="assets/Grey wolf 1.png" alt="Grey Wolf logo" class="logo" />
       <a href="#"><i class="fas fa-shopping-cart"></i></a>
     </div>
+    <div class="greywolf__title">
+      <h1>Grey Wolf</h1>
+    </div>
     <a href="#eco"><img src="assets/okobar.png" alt="Økobar" class="okobar__link"></a>
 
     <!--slide show-->
@@ -52,20 +55,15 @@
       </button>
       <button class="shopNow__button"><a href="#">Køb nu</a></button>
     </div>
-    
-        <!-- konkurrence -->
-        
-  <div class="flip-box">
-    <div class="flip-box-inner">
-      <div class="flip-box-front">
-        <img src="slideshow1.jpg" alt="konkurrence" class="responsive" >
-      </div>
-      <div class="flip-box-back">
-        <h2>Konkurrence</h2>
-        <p>Deltag</p>
-      </div>
+
+    <!--Gavekort-->
+
+    <div class="giftCard__container">
+      <!--img used as background img-->
+      <h2>Gavekort</h2>
+      <p>100 kr</p>
+      <button>Vind</button>
     </div>
-  </div>
 
 
 
@@ -84,49 +82,47 @@
     </button>
   </div>
 
-      <!-- nyhedsbrev -->
-      <form action="action_page.php">
-        <div class="container">
-          <h2>Nyhedsbrev</h2>
-          <p></p>
-        </div>
-      
-        <div class="container" style="background-color:white">
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Email address" name="mail" required>
-  
-        </div>
-      
-        <div class="container">
-          <input type="submit" value="tilmeld">
-        </div>
-      </form>
-  
-
-  
-  <!--Hvorfor GW er økologisk tøj-->
-  <div class="container separator" id="eco">
-  <img src="assets/sportClothes1.jpg" alt="Økotøj" class="responsive">
-    <div class="text-block">
-      <h4>Grey wolf opfylder dine krav</h4>
-      <p>Du vil have det behageligt i dit træningstøj.</p>
-      <p>Sportstøj skal understrege, hvor lækker du er.</p>
-    </div>
-  </div>
+        <!-- nyhedsbrev enhanced edition -->
+        <form class="newsletter__container">
+          <div>
+            <h2>Nyhedsbrev</h2>
+          </div>
+        
+          <div style="background-color:white">
+            <input type="text" placeholder="Name" name="name" required class="newsletter__name">
+            <input type="text" placeholder="Email address" name="mail" required class="newsletter__email">
+    
+          </div>
+        
+          <div>
+            <input type="submit" value="tilmeld" class="newsletter__submit">
+          </div>
+        </form>
 
    
   <!-- Dame og herre -->
   <div class="flex__container">
-  <div class="container">
-    <img src="slideshow2.jpg" alt="dame">
-    <button class="btn">dame</button>
+  <div class="container_x">
+    <img src="assets/kvinde.jpeg" alt="Kvinde">
+    <button class="btn">Kvinde</button>
   </div>
   
-  <div class="container">
-    <img src="slideshow2.jpg" alt="herre">
-    <button class="btn">herre</button>
+  <div class="container_x">
+    <img src="assets/mand.jpeg" alt="Mand">
+    <button class="btn">Mand</button>
   </div>
 </div>
+
+
+  <!--Hvorfor GW er økologisk tøj-->
+  <div class="eco__section separator" id="eco">
+    <img src="assets/eco.jpg" alt="Økotøj" class="responsive">
+      <div>
+        <h3>Grey wolf sælger med omtanke</h3>
+        <p>Vores mission er at give alle en mulighed for, at købe økologisk og miljøbevidst sportstøj, som både er komfortabel og moderne og til en overskuelig pris.</p>
+        <p>Vidste du at 95% af fibrene til vores tøj er genanvendt?</p>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__container--first">
