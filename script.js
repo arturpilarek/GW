@@ -16,7 +16,7 @@ hamburger.addEventListener('click', handleClick);
 var slider_content = document.getElementById('box');
 
 // contain images in an array
-var image = ['slideshow1','slideshow2', 'slideshow3'];
+var image = ['slideshow11','slideshow22', 'slideshow33', 'slideshow44'];
 
 var i = image.length;
 
@@ -48,48 +48,7 @@ function prevImage(){
 
 // script for auto image slider
 
-setInterval(nextImage , 4000);
+setInterval(nextImage , 6000);
 
 
 
-
-// slideshow 2
-
-
-//Slider starts here
-var slider_content = document.getElementById('box2');
-
-// contain images in an array
-var image = ['slideshow1','slideshow2', 'slideshow3'];
-
-var i = image.length;
-
-
-// function for next slide 
-
-function nextImage2(){
-  if (i<image.length) {
-      i= i+1;
-  }else{
-      i = 1;
-  }
-    slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
-}
-
-
-// function for prev slide
-
-function prevImage2(){
-
-  if (i<image.length+1 && i>1) {
-      i= i-1;
-  }else{
-      i = image.length;
-  }
-    slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
-
-}
-
-// script for auto image slider
-
-setInterval(nextImage2 , 4000);

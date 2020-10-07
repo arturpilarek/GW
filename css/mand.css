@@ -63,22 +63,22 @@
 
   /* Product container -header+sort  */
 
-  .product-container {
+  .product__container {
       margin: 10px;
   }
 
-  .product-filter {
+  .product__filter {
     display: flex;
     margin-top: 30px;
     background-color: #4A4949;
     align-items: center;
   }
 
-  .product-filter {
+  .product__filter {
       color: #FFAE4D;
   }
 
-  .product-filter h1 {
+  .product__filter h1 {
     flex-grow: 1;
     margin-left: 10px;
   }
@@ -87,7 +87,7 @@
     display: flex;
   }
 
-  .collection-sort {
+  .collection__sort {
     display: flex;
     flex-direction: column;
   }
@@ -99,7 +99,7 @@
     flex-wrap: wrap;
   }
 
-  .product-image img {
+  .product__image img {
     max-width: 100%;
   }
 
@@ -108,7 +108,7 @@
     flex-wrap: wrap;
   }
   
-  .product-card {
+  .product__card {
     padding: 2%;
     flex-grow: 1;
     flex-basis: 16%;
@@ -119,20 +119,20 @@
     text-align: center;
   }
 
-  .product-info {
+  .product__info {
     margin-top: auto;
   }
 
   /* Select the first two , two enlarge first two products */
-.products .product-card:first-child, 
-.products .product-card:nth-child(2) {
+.products .product__card:first-child, 
+.products .product__card:nth-child(2) {
   flex: 2 46%;
 } 
 
 
 /*media queries for mobile, skal tilpasses */
 @media (max-width: 600px) {
-    .product-card {
+    .product__card {
       flex: 1 46%;
     }
   }   
@@ -140,7 +140,7 @@
   
   
   @media (max-width: 480px) {
-  .product-filter {
+  .product__filter {
     flex-direction: column;
   }
   .sort {
