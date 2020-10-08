@@ -6,7 +6,7 @@
     <title>Grey Wolf</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hamburger.css" />
-    <link rel="stylesheet" href="css/style-C.css">
+    <link rel="stylesheet" href="css/style-C.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,7 +17,6 @@
     ></script>
   </head>
   <body>
-    <div class="gradient">
     <div class="hero-bg">
       <button class="hamburger hamburger--active">
         <!--dobbelt span for at gore hamburgen menuen mere synligt og nemmer at click pa-->
@@ -33,13 +32,15 @@
           <li class="navigation__item"><a href="#">Tilbud</a></li>
         </ul>
       </div>
-      <img src="assets/Grey wolf 1.png" alt="Grey Wolf logo" class="logo" />
+      <img src="assets/logo.png" alt="Grey Wolf logo" class="logo" />
       <a href="#"><i class="fas fa-shopping-cart"></i></a>
     </div>
     <div class="greywolf__title">
       <h1>Grey Wolf</h1>
     </div>
-    <a href="#eco"><img src="assets/okobar.jpeg" alt="Økobar" class="okobar__link"></a>
+    <a href="#eco"
+      ><img src="assets/okobar.jpeg" alt="Økobar" class="okobar__link"
+    /></a>
 
     <!--slide show-->
     <div class="slider">
@@ -53,77 +54,85 @@
       <button class="next button" onclick="nextImage()">
         <i class="fas fa-caret-right"></i>
       </button>
-      <button class="shopNow__button"><a href="#">Køb nu</a></button>
+      <button class="shopNow__button">Køb nu</button>
     </div>
 
-        <!-- Dame og herre -->
-  <div class="flex__container">
-    <div class="manWoman__container">
-      <img src="assets/kvinde.jpeg" alt="Kvinde">
-      <button class="btn">Kvinde</button>
+    <!-- Dame og herre -->
+    <div class="flex__container">
+      <div class="manWoman__container">
+        <img src="assets/kvinde.jpeg" alt="Kvinde" />
+        <button class="btn">Kvinde</button>
+      </div>
+
+      <div class="manWoman__container">
+        <img src="assets/mand.jpeg" alt="Mand" />
+        <button class="btn">Mand</button>
+      </div>
     </div>
-    
-    <div class="manWoman__container">
-      <img src="assets/mand.jpeg" alt="Mand">
-      <button class="btn">Mand</button>
-    </div>
-  </div>
     <!--Gavekort-->
 
     <div class="giftCard__container">
-      <!--img used as background img-->
       <div class="giftCard__titleContainer">
-        <img src="assets/Grey wolf 1.png" alt="">
-      <h2>Gavekort</h2></div>
+        <img src="assets/logo.png" alt="Grey Wolf Logo" />
+        <h2>Gavekort</h2>
+      </div>
       <div class="giftCard__contentContainer">
-      <p>Vind et gavekort! 
-        Tilmeld dig til vores nyhedsbrev og 
-        vind et gavekort 300kr
-        🎉🎉🎉🎉🎉
-        🏆🏅
-      </p>
-      <button>Vind</button>
-    </div>
+        <p>
+          Vind et gavekort! Tilmeld dig til vores nyhedsbrev og vind et gavekort
+          300kr
+        </p>
+        <button>Vind</button>
+      </div>
     </div>
 
-<section class="news">
-  <h2>Nyheder</h2>
-  <div class="news__pictureContainer">
-    <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj">
-    <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj">
-    <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj">
-    <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj">
-  </div>
-</section>
+    <section class="news">
+      <h2>Nyheder</h2>
+      <div class="news__pictureContainer">
+        <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj" />
+        <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj" />
+        <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj" />
+        <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj" />
+      </div>
+    </section>
 
+    <!-- nyhedsbrev enhanced edition -->
+    <form class="newsletter__container">
+      <div>
+        <h2>Nyhedsbrev</h2>
+      </div>
 
-        <!-- nyhedsbrev enhanced edition -->
-        <form class="newsletter__container">
-          <div>
-            <h2>Nyhedsbrev</h2>
-          </div>
-        
-          <div style="background-color:white">
-            <input type="text" placeholder="Name" name="name" required class="newsletter__name">
-            <input type="text" placeholder="Email address" name="mail" required class="newsletter__email">
-    
-          </div>
-        
-          <div>
-            <input type="submit" value="tilmeld" class="newsletter__submit">
-          </div>
-        </form>
+      <div style="background-color: white">
+        <input
+          type="text"
+          placeholder="Name"
+          name="name"
+          required
+          class="newsletter__name"
+        />
+        <input
+          type="text"
+          placeholder="Email address"
+          name="mail"
+          required
+          class="newsletter__email"
+        />
+      </div>
 
-   
+      <div>
+        <input type="submit" value="tilmeld" class="newsletter__submit" />
+      </div>
+    </form>
 
-
-
-  <!--Hvorfor GW er økologisk tøj-->
-  <div class="eco__section separator" id="eco">
-    <img src="assets/eco.jpg" alt="Økotøj" class="responsive">
+    <!--Hvorfor GW er økologisk tøj-->
+    <div class="eco__section separator" id="eco">
+      <img src="assets/eco.jpg" alt="Økotøj" class="responsive" />
       <div>
         <h3>Grey wolf sælger med omtanke</h3>
-        <p>Vores mission er at give alle en mulighed for, at købe økologisk og miljøbevidst sportstøj, som både er komfortabel og moderne og til en overskuelig pris.</p>
+        <p>
+          Vores mission er at give alle en mulighed for, at købe økologisk og
+          miljøbevidst sportstøj, som både er komfortabel og moderne og til en
+          overskuelig pris.
+        </p>
         <p>Vidste du at 95% af fibrene til vores tøj er genanvendt?</p>
       </div>
     </div>
@@ -134,7 +143,7 @@
         <div class="footer__floatContainer">
           <img src="assets/os.jpeg" alt="Authors" />
           <p>
-            Artur, Carina, Mikkel, Malene, Nadia<br>
+            Artur, Carina, Mikkel, Malene, Nadia<br />
             Grey Wolf team
           </p>
         </div>
@@ -145,6 +154,6 @@
         <a href="#" class="fa fa-instagram"></a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>

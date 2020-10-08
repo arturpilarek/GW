@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
-html {
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto&display=swap');
   box-sizing: border-box;
 }
 
@@ -63,6 +64,8 @@ body {
   top: 0;
   background-color: white;
   z-index: 998;
+  font-family: "NanumGothic";
+  font-weight: bold;
 }
 
 .nyhedsbrev__container {
@@ -106,22 +109,68 @@ body {
   padding: 10px;
   border: none;
   background: #FFAE4D;
+  color: white;
   font-size: 20px;
   position: absolute;
+  font-family: "NanumGothic";
+  font-weight: bold;
   top: 83%;
   right: 37%;
   border-radius: 32px;
 }
 
-.shopNow__button a {
-  color: white;
+
+/* mand/kvinde */
+
+
+.flex__container {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
+  
+  /* Make the image responsive */
+  .manWoman__container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .manWoman__container {
+    position: relative;
+    margin: 0 auto; /* Center it */
+    padding: 0px;
+    background-color: #f1f1f1;
+    position: relative;
+    width: 100%;
+  }
+  
+  .manWoman__container .btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    background-color: #FFAE4D;
+    color: white;
+    font-size: 16px;
+    font-family: "NanumGothic";
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .manWoman__container .btn:hover {
+    background-color: black;
+  }
+
 
 /* Gavekort */
 
 .giftCard__container {
   width: 100%;
-  height: 200px;
+  max-height: 300px;
   background-color: #707070;
   font-size: 20px;
   display: flex;
@@ -136,8 +185,11 @@ body {
   color: #FFAE4D;
   text-align: center;
   background-color: white;
-  height: 200px;
   position: relative;
+}
+.giftCard__titleContainer h2 {
+  display: inline-block;
+  height: 30%;
 }
 
 .giftCard__titleContainer img {
@@ -149,12 +201,25 @@ body {
   top: 20%;
 }
 
+.giftCard__contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .giftCard__container button {
   background-color: #FFAE4D;
   color: white;
-  border-radius: 32px;
-  padding: 10px;
-  font-size: 30px;
+  font-size: 16px;
+  font-family: "NanumGothic";
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-bottom: 6px;
+
 }
 .giftCard__container h2 {
   margin-bottom: 0;
@@ -173,7 +238,7 @@ body {
 }
 
 .news__pictureContainer img {
-  width: 100%;
+  max-width: 100%;
   padding: 8px;
 }
 
@@ -213,49 +278,6 @@ body {
   opacity: 0.8;
 }
 
-
-/* mand/kvinde */
-
-
-.flex__container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-  
-  /* Make the image responsive */
-  .manWoman__container img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Style the button and place it in the middle of the container/image */
-  .manWoman__container {
-    position: relative;
-    margin: 0 auto; /* Center it */
-    padding: 0px;
-    background-color: #f1f1f1;
-    position: relative;
-    width: 100%;
-  }
-  
-  .manWoman__container .btn {
-    position: absolute;
-    top: 70%;
-    left: 50%;  
-    transform: translate(-50%, -50%);
-    background-color: #FFAE4D;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 16px;
-  }
-  
-  .manWoman__container .btn:hover {
-    background-color: black;
-  }
 
 
 /* eco sektionen */
@@ -309,7 +331,7 @@ body {
   color: white;
   margin-top: 50px; 
   position: absolute;
-  width: 100vw;
+  max-width: 100%;
 }
 
 .footer__container--first {
