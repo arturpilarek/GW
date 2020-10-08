@@ -11,10 +11,20 @@
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-  height: 100vh;
+body, html{    
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  font-family: "NanumGothic";
 }
+
+/* For at styre pa afstand mellem elementerne */
+.slider, .manWoman__flex-container, .giftCard__container, .news, .eco__section, .footer {
+  margin-top: 34px;
+}
+
 
 /* dark:#171717    light #FFFFFF */
 .hero-bg {
@@ -25,11 +35,6 @@ body {
   background-size: cover;
   width: 100%;
   position: relative;
-}
-
-/* husk, at du skal bruge denne gradient templat orange 30%, #707070, white, sa uundvaerer du den maerkelig hvid bar i bunden */
-.gradient {
-  background-image: linear-gradient(white 20%, #707070, white);
 }
 
 .logo {
@@ -48,6 +53,7 @@ body {
   position: absolute;
   left: 89%;
   top: 60%;
+  color: #FFAE4D;
 }
 
 
@@ -86,7 +92,6 @@ body {
   height: 320px;
   margin: 20px auto;
   position: relative;
-  margin-bottom: 30px;
 }
 
 .button {
@@ -123,9 +128,9 @@ body {
 /* mand/kvinde */
 
 
-.flex__container {
+.manWoman__flex-container {
   display: flex;
-  height: 100%;
+  height: auto%;
   width: 100%;
 }
   
@@ -178,6 +183,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  border: 2px solid #707070;
 }
 
 .giftCard__titleContainer {
@@ -186,10 +192,6 @@ body {
   text-align: center;
   background-color: white;
   position: relative;
-}
-.giftCard__titleContainer h2 {
-  display: inline-block;
-  height: 30%;
 }
 
 .giftCard__titleContainer img {
@@ -222,7 +224,7 @@ body {
 
 }
 .giftCard__container h2 {
-  margin-bottom: 0;
+  margin-bottom: 6px;
 }
 
 /* Nyheder */
@@ -235,13 +237,14 @@ body {
 .news__pictureContainer {
   display: grid;
   grid-template-columns: auto auto;
+  grid-gap: 5px;
+  margin: 5px;
 }
 
 .news__pictureContainer img {
-  max-width: 100%;
-  padding: 8px;
+  width: 100%;
+  height: 235px;
 }
-
 
 
 /* Nyhedsbrev */
@@ -255,7 +258,7 @@ body {
 
 .newsletter__container {
   margin-top: 0;
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 
@@ -282,14 +285,15 @@ body {
 
 /* eco sektionen */
 .eco__section {
-  margin: 0 auto;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #31645B;
   text-align: center;
+  color: white;
+  margin-top: 34px;
 }
 
-.separator {
-  margin-bottom: 50px;
+.eco__content p {
+  font-family: "Roboto";
 }
 
 
@@ -300,37 +304,13 @@ body {
 
 
 /* Footer  */
-.fa {
-  padding: 20px;
-  font-size: 25px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
 
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 .footer {
-  height: 30%;
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #3f5f6a;
+  background-color: #31645B;
   color: white;
-  margin-top: 50px; 
-  position: absolute;
   max-width: 100%;
 }
 
@@ -340,11 +320,6 @@ body {
   align-items: center;
 }
 
-.footer__container--second {
-  text-align: center;
-  align-self: flex-start;
-  margin-top: 15px;
-}
 
 .footer__floatContainer {
   display: flex;
@@ -359,9 +334,38 @@ body {
   align-self: center;
 }
 
-.billeder__container {
+.footer__container--second {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer__container--second-icons {
   display: flex;
-  height: 400px;
+  justify-content: center;
+}
+
+
+.fa {
+  padding: 18px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 
 

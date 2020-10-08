@@ -69,15 +69,16 @@
 }
 
 .navigation {
-    height: 180px;
+    height: 300px;
     width: 160px;
-    background-color:#4A4949;
+    background-color:#FFAE4D;
     position: absolute;
     left: 0;
     top: 128px;
     transform: translateX(-160px);
     border: 3px solid #FFAE4D;
     z-index: 999;
+    opacity: 0.9;
 }
 
 
@@ -100,6 +101,6 @@
 
     a {
         text-decoration: none;
-        color: orange;
+        color: white;
     }
 
