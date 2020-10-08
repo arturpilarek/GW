@@ -28,7 +28,7 @@ body, html{
 
 /* dark:#171717    light #FFFFFF */
 .hero-bg {
-  background: #3f5f6a url(../backgroundHeader.jpeg);
+  background: #3f5f6a url(../assets/backgroundHeader.jpeg);
   background-repeat: no-repeat;
   padding-bottom: 8em;
   background-position: 50% 100%;
@@ -165,11 +165,6 @@ body, html{
     cursor: pointer;
     border-radius: 16px;
   }
-  
-  .manWoman__container .btn:hover {
-    background-color: black;
-  }
-
 
 /* Gavekort */
 
