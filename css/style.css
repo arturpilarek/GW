@@ -1,9 +1,5 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style>
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto&display=swap');
-  box-sizing: border-box;
-}
 
 *,
 *::before,
@@ -25,9 +21,7 @@ body, html{
   margin-top: 34px;
 }
 
-
-/* dark:#171717    light #FFFFFF */
-.hero-bg {
+.nav-bg {
   background: #3f5f6a url(../assets/backgroundHeader.jpeg);
   background-repeat: no-repeat;
   padding-bottom: 8em;
@@ -130,17 +124,17 @@ body, html{
 
 .manWoman__flex-container {
   display: flex;
-  height: auto%;
+  height: auto;
   width: 100%;
 }
   
-  /* Make the image responsive */
+
   .manWoman__container img {
     width: 100%;
     height: 100%;
   }
   
-  /* Style the button and place it in the middle of the container/image */
+
   .manWoman__container {
     position: relative;
     margin: 0 auto; /* Center it */
@@ -323,8 +317,8 @@ body, html{
 }
 
 .footer__floatContainer img {
-  height: 35%;
-  width: 35%;
+  height: 50%;
+  width: 50%;
   border-radius: 16px;
   align-self: center;
 }
@@ -341,7 +335,7 @@ body, html{
 
 
 .fa {
-  padding: 18px;
+  padding: 16px;
   font-size: 25px;
   width: 50px;
   text-align: center;
@@ -361,11 +355,4 @@ body, html{
 .fa-instagram {
   background: #125688;
   color: white;
-}
-
-
-@media screen and (max-width: 450px) {
-  .footer {
-    width: 420px;
-  }
 }

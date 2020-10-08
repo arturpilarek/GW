@@ -16,7 +16,7 @@ hamburger.addEventListener('click', handleClick);
 var slider_content = document.getElementById('box');
 
 // contain images in an array
-var image = ['slideshow11','slideshow22', 'slideshow33', 'slideshow44'];
+var image = ['slideshow1','slideshow2', 'slideshow3', 'slideshow4'];
 
 var i = image.length;
 

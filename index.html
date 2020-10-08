@@ -17,7 +17,7 @@
     ></script>
   </head>
   <body>
-    <div class="hero-bg">
+    <nav class="nav-bg">
       <button class="hamburger hamburger--active">
         <span class="hamburger__box">
           <span class="hamburger__inner"></span>
@@ -26,135 +26,142 @@
       <div class="navigation navigation--active">
         <ul class="navigation__list">
           <li class="navigation__item"><a href="mand.html">Mand</a></li>
-          <li class="navigation__item"><a href="dame.html">Kvinde</a></li>
+          <li class="navigation__item"><a href="kvinde.html">Kvinde</a></li>
           <li class="navigation__item"><a href="#">Nyheder</a></li>
           <li class="navigation__item"><a href="#">Tilbud</a></li>
         </ul>
       </div>
+      <!--Logo vi selv har lavet-->
       <img src="assets/logo.png" alt="Grey Wolf logo" class="logo" />
       <a href="#"><i class="fas fa-shopping-cart"></i></a>
-    </div>
-    <div class="greywolf__title">
+    </nav>
+    <header class="greywolf__title">
       <h1>Grey Wolf</h1>
-    </div>
-    <!--https://beawear.dk/?gclid=Cj0KCQjwtsv7BRCmARIsANu-CQfSNMKrzrR-vtaQ3n-i6m1GBw5OQNJM1CL7ewj_2ycBggNiVZBV3KQaAsMQEALw_wcB&fbclid=IwAR3uYxCowM_MBrTkiwv3MyOKLyK0ib46zZjiJF_lS273XkK1HMTifsSQbF4-->
-    <a href="#eco"
-      ><img src="assets/okobar.jpeg" alt="Økobar" class="okobar__link"
-    /></a>
+    </header>
+
+    <!--img kilde: https://beawear.dk/?gclid=Cj0KCQjwtsv7BRCmARIsANu-CQfSNMKrzrR-vtaQ3n-i6m1GBw5OQNJM1CL7ewj_2ycBggNiVZBV3KQaAsMQEALw_wcB&fbclid=IwAR3uYxCowM_MBrTkiwv3MyOKLyK0ib46zZjiJF_lS273XkK1HMTifsSQbF4-->
+    <aside>
+      <a href="#eco"
+        ><img src="assets/okobar.jpeg" alt="Økobar" class="okobar__link" />
+      </a>
+    </aside>
 
     <!--slide show-->
-    <!--3 billeder fra slide show har vi taget selv, det sidste er fra https://unsplash.com/photos/ZXq7xoo98b0-->
-    <div class="slider">
-      <div id="box">
-        <img src="slideshow33.jpg" alt="First Slide" class="slide__img" />
-      </div>
-      <!--control buttons to the slideshow-->
-      <button class="prev button" onclick="prevImage()">
-        <i class="fas fa-caret-left"></i>
-      </button>
-      <button class="next button" onclick="nextImage()">
-        <i class="fas fa-caret-right"></i>
-      </button>
-      <button class="shopNow__button">Køb nu</button>
-    </div>
-
-    <!-- Dame og herre -->
-    <div class="manWoman__flex-container">
-      <div class="manWoman__container">
-        <img src="assets/kvinde.jpeg" alt="Kvinde" />
-        <button class="btn">Kvinde</button>
+    <!--3 billeder vi selv har taget, det sidste er fra https://unsplash.com/photos/ZXq7xoo98b0-->
+    <main>
+      <div class="slider">
+        <div id="box">
+          <img src="slideshow3.jpg" alt="First Slide" class="slide__img" />
+        </div>
+        <!--control buttons to the slideshow-->
+        <button class="prev button" onclick="prevImage()">
+          <i class="fas fa-caret-left"></i>
+        </button>
+        <button class="next button" onclick="nextImage()">
+          <i class="fas fa-caret-right"></i>
+        </button>
+        <button class="shopNow__button">Køb nu</button>
       </div>
 
-      <div class="manWoman__container">
-        <img src="assets/mand.jpeg" alt="Mand" />
-        <button class="btn">Mand</button>
-      </div>
-    </div>
-    <!--Gavekort-->
+      <!-- Dame og herre -->
+      <section class="manWoman__flex-container">
+        <div class="manWoman__container">
+          <img src="assets/kvinde.jpeg" alt="Kvinde" />
+          <button class="btn" onclick="window.location.href='/kvinde.html'">
+            Kvinde
+          </button>
+        </div>
 
-    <div class="giftCard__container">
-      <div class="giftCard__titleContainer">
-        <img src="assets/logo.png" alt="Grey Wolf Logo" />
-        <h2>Gavekort</h2>
-      </div>
-      <div class="giftCard__contentContainer">
-        <p>
-          Vind et gavekort! Tilmeld dig til vores nyhedsbrev og vinde et gavekort på
-          300kr
-        </p>
-        <button>Vind</button>
-      </div>
-    </div>
+        <div class="manWoman__container">
+          <img src="assets/mand.jpeg" alt="Mand" />
+          <button class="btn" onclick="window.location.href='/mand.html'">
+            Mand
+          </button>
+        </div>
+      </section>
+      <!--Gavekort-->
 
-    <section class="news">
-      <h2>Nyheder</h2>
-      <div class="news__pictureContainer">
-        <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj" />
-        <img src="assets/bukser1.jpg" alt="Billedet af nyt tøj" />
-        <img src="assets/trojeart.png" alt="Billedet af nyt tøj" />
-        <img src="assets/jakke1.jpeg" alt="Billedet af nyt tøj" />
-      </div>
-    </section>
+      <section class="giftCard__container">
+        <div class="giftCard__titleContainer">
+          <img src="assets/logo.png" alt="Grey Wolf Logo" />
+          <h2>Gavekort</h2>
+        </div>
+        <div class="giftCard__contentContainer">
+          <p>Vind et gavekort! Tilmeld dig vores nyhedsbrev og vind 300kr</p>
+        </div>
+      </section>
 
-    <!-- nyhedsbrev -->
-    <form class="newsletter__container">
-      <div>
-        <h2>Nyhedsbrev</h2>
-      </div>
+      <section class="news">
+        <h2>Nyheder</h2>
+        <div class="news__pictureContainer">
+          <!--4 billeder vi selv har taget-->
+          <img src="assets/nyheder.jpg" alt="Billedet af nyt tøj" />
+          <img src="assets/bukser1.jpg" alt="Billedet af nyt tøj" />
+          <img src="assets/trojeart.png" alt="Billedet af nyt tøj" />
+          <img src="assets/jakke1.jpeg" alt="Billedet af nyt tøj" />
+        </div>
+      </section>
 
-      <div style="background-color: white">
-        <input
-          type="text"
-          placeholder="Name"
-          name="name"
-          required
-          class="newsletter__name"
-        />
-        <input
-          type="text"
-          placeholder="Email address"
-          name="mail"
-          required
-          class="newsletter__email"
-        />
-      </div>
+      <!-- nyhedsbrev -->
+      <section>
+        <form class="newsletter__container">
+          <div>
+            <h2>Nyhedsbrev</h2>
+          </div>
 
-      <div>
-        <input type="submit" value="tilmeld" class="newsletter__submit" />
-      </div>
-    </form>
+          <div style="background-color: white">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+              class="newsletter__name"
+            />
+            <input
+              type="text"
+              placeholder="Email address"
+              name="mail"
+              required
+              class="newsletter__email"
+            />
+          </div>
 
-    <!--Hvorfor GW er økologisk tøj-->
-    <div class="eco__section" id="eco">
-      <!--https://unsplash.com/photos/c6zenQDVavc?fbclid=IwAR2ypupIxvVGZs-1K_kLNckJW4wYGYZPscJL6Jr-ed37QQBZk0fOVfq5Czk-->
-      <img src="assets/eco.jpg" alt="Økotøj" class="responsive" />
-      <div class="eco__content">
-        <h3>Grey wolf sælger med omtanke</h3>
-        <p>
-          Vores mission er at give alle en mulighed for, at købe økologisk og
-          miljøbevidst sportstøj, som både er komfortabel og moderne og til en
-          overskuelig pris.
-        </p>
-        <p>Vidste du at 95% af fibrene til vores tøj er genanvendt?</p>
+          <div>
+            <input type="submit" value="tilmeld" class="newsletter__submit" />
+          </div>
+        </form>
+      </section>
+
+      <!--Hvorfor GW er økologisk-->
+      <div class="eco__section" id="eco">
+        <!--https://unsplash.com/photos/c6zenQDVavc?fbclid=IwAR2ypupIxvVGZs-1K_kLNckJW4wYGYZPscJL6Jr-ed37QQBZk0fOVfq5Czk-->
+        <img src="assets/eco.jpg" alt="Økotøj" class="responsive" />
+        <div class="eco__content">
+          <h3>Grey wolf sælger tøj med omtanke</h3>
+          <p>
+            Vores mission er, at alle har mulighed for at købe økologisk og
+            miljøbevidst sportstøj. Vores tøj er både komfortabel og moderne. Og
+            prisen for det er endda overkommelig.
+          </p>
+          <p>Vidste du at 95% af fibrene til vores tøj er genanvendt?</p>
+        </div>
       </div>
-    </div>
+    </main>
 
     <footer class="footer">
       <div class="footer__container--first">
         <h3>Teamet</h3>
         <div class="footer__floatContainer">
           <img src="assets/os.jpeg" alt="Authors" />
-          <p>
-            Grey Wolf team
-          </p>
+          <p>Grey Wolf team</p>
         </div>
       </div>
       <div class="footer__container--second">
         <h3>Kontakt os</h3>
         <div class="footer__container--second-icons">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-      </div>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
